@@ -1,25 +1,23 @@
-import Nav from "./Nav"
-import Journal from "./Journal"
+import Nav from "./Nav";
+import Journal from "./Journal";
 import data from "./data";
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const travelInfo = data.map(info => {
-    return <Journal info = {info}
-                 
-    />;
-  })
- return (
+  const travelInfo = data.map((info) => {
+    return <Journal info={info} />;
+  });
+  return (
     <>
-     <Nav/>
-    {travelInfo}
+      <Nav />
+      {travelInfo}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
 //  <div>
 //         <a href="https://vitejs.dev" target="_blank">
 //           <img src={viteLogo} className="logo" alt="Vite logo" />
